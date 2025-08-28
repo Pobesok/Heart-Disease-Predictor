@@ -7,6 +7,7 @@ A machine learning project that predicts the presence of heart disease using the
 📌 Project Overview
 
 This project implements a standard ML pipeline to build a binary classifier for heart disease prediction. The goal is to identify the most important clinical features and evaluate model performance using common metrics.
+
 **Key Results:**
 - The **Random Forest** model achieved the best performance with **~90% accuracy**.
 - Top predictive features: `oldpeak`, `thalach`, `chol`, and `age`.
