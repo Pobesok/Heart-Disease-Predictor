@@ -1,19 +1,23 @@
-Heart-Disease-Predictor
+**Project Title: Heart-Disease-Predictor**
+
 A machine learning project that predicts the presence of heart disease using the UCI Heart Disease dataset. This repository compares the performance of Logistic Regression and Random Forest classifiers.
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
 ![Status](https://img.shields.io/badge/Status-Complete-green)
 
-📌 Project Overview
+
+**📌 Project Overview**
 
 This project implements a standard ML pipeline to build a binary classifier for heart disease prediction. The goal is to identify the most important clinical features and evaluate model performance using common metrics.
 
+
 **Key Results:**
+
 - The **Random Forest** model achieved the best performance with **~90% accuracy**.
 - Top predictive features: `oldpeak`, `thalach`, `chol`, and `age`.
 - An anomalous high importance was assigned to the `id` feature, requiring further investigation.
 
-📁 Dataset
+**📁 Dataset**
 
 **Source:** [Heart Disease UCI Dataset on Kaggle](https://www.kaggle.com/ronitf/heart-disease-uci)
 
@@ -23,7 +27,8 @@ The dataset contains 14 attributes, including:
 - `thalach` (max heart rate achieved), `oldpeak` (ST depression induced by exercise)
 - `target` (presence of heart disease)
 
-- ⚙️ Installation & Dependencies
+
+- **⚙️ Installation & Dependencies**
 
 To run this project, ensure you have Python 3.8+ installed. Install the required libraries:
 
@@ -41,7 +46,9 @@ matplotlib
 
 seaborn (for visualization)
 
-🚀 Usage
+
+**🚀 Usage**
+
 Clone the repository:
 
 
@@ -65,8 +72,11 @@ Model Evaluation and Hyperparameter Tuning
 
 Feature Importance Analysis
 
+
 🔬 Methodology
-Data Preprocessing:
+
+**Data Preprocessing:**
+
 
 Missing numerical values were imputed with the mean.
 
@@ -76,13 +86,18 @@ Categorical features were encoded using One-Hot Encoding.
 
 Numerical features were standardized using StandardScaler.
 
-Modeling:
+
+**Modeling:**
+
 
 Logistic Regression (LR): A baseline binary classification model.
 
 Random Forest (RF): An ensemble method using multiple decision trees.
 
-Evaluation:
+
+**Evaluation:**
+
+
 Models were evaluated on a hold-out test set using:
 Accuracy
 
@@ -92,7 +107,9 @@ Recall
 
 F1-Score
 
-📊 Results
+📊 **Results**
+
+
 Model	Accuracy	Precision	Recall	F1-Score
 Logistic Regression	0.85	0.84	0.87	0.85
 Random Forest	0.90	0.89	0.91	0.90
@@ -111,7 +128,9 @@ ca
 
 Note: The id feature was incorrectly identified as highly important, suggesting potential data leakage or bias that needs to be examined.
 
-🔮 Future Work
+
+🔮 **Future Work**
+
 Investigate the cause of high feature importance for the id column.
 
 Experiment with other algorithms (e.g., XGBoost, SVM, Neural Networks).
@@ -120,7 +139,9 @@ Perform more advanced feature engineering.
 
 Source a larger and more diverse dataset to improve generalizability.
 
-🙏 Acknowledgments
+
+**🙏 Acknowledgments**
+
 Credit to the UCI Machine Learning Repository for the dataset.
 
 Inspired by various data science tutorials and community resources.
